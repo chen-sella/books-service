@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="onInit()">
+    <h1>My Book Store</h1>
+    <a class="create-book" onclick="onShowForm()">Create new book +</a>
+    <div class="new-book-container">
+        <form class="new-book">
+            <input name="bookName" type="text" placeholder="Enter Book name">
+            <input name="bookPrice" type="text" placeholder="Enter Book price">
+            <button class="new-book-btn" onclick="onAddBook(event)">Add Book</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th name="title" onclick="onSortBooks('title')">Title</th>
+                <th name="price" onclick="onSortBooks('price')">Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="books-container">
+
+        </tbody>
+    </table>
+    <div class="paging-container">
+        
+    </div>
+    <div class="book-modal">
+
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

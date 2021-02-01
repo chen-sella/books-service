@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  background-color: #f6f5f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+.new-book-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.create-book {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.books-container {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #1687a7;
+}
+td {
+  background-color: #d3e0ea;
+}
+
+td,
+th {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+button {
+  font-family: 'Kalam', cursive;
+  background-color: #bbbbbb;
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-modal {
+  display: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(170, 170, 170, 0.85);
+  position: fixed;
+  top: 16%;
+  left: 36%;
+  width: 400px;
+  height: 80%;
+  text-align: center;
+}
+
+.show-modal{
+  display: block;
+}
+
+.show-form{
+    display:flex;
+}
+
+img {
+  width: 100px;
+}
+
+.rate {
+  border-radius: 4px;
+  border: none;
+  font-family: 'Kalam';
+  text-align: center;
+}
+
+.rate-btn,
+.close-modal {
+  background-color: #ffffff;
+  color: black;
+}
+
+input{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Kalam';
+}
+
+th[name="title"], th[name="price"]{
+    cursor: pointer;
+}
+
+.paging-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
